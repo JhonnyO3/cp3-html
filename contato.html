@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contato.css">
     <title>Contato</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <div class="container">
-            <fieldset>
+ 
+       
+   
+        <form action="#" method="post">
+            <div class="container1">
+                <label for="">Faça já sua inscrição!</label>
                 <input type="text" name="nome" value="" placeholder="Seu Nome Completo" />
                 <input type="text" cpf="cpf" value="" placeholder="Digite CPF">
                 <input type="text" email="email" value="" placeholder="Seu Email" />
-                <input type="text" nasc="nasc" value="" placeholder="Data de Nascimento" />
+                <input type="date" nasc="nasc" value="" placeholder="Data de Nascimento" />
+            </div>
+            <div class="container2">
+                <label>Gênero</label>
+                <select name="genero" id="genero" >
+                    <option selected disabled value="">Selecione</option>
+                    <option value="">Masculino</option>
+                    <option value="">Feminino</option>
+                    <option value="">Prefiro não dizer</option>
+                </select>
+            </div>
+            
+            <div class="container3">
+                <label>Qual sua motivação para a viagem?</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Digite em poucas palavras.."></textarea>
+            </div>
+        </form>
 
-            </fieldset>
-
-        </div>
-    </form>
 </body>
 </html>
