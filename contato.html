@@ -5,29 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contato.css">
+    <script src="./contato.js" defer></script>
     <title>Contato</title>
 </head>
 <body>
  
        
    
-        <form action="#" method="post">
+        <form class="cadastro" action="#" method="get">
             <div>
-                <label for="">Faça já sua inscrição!</label>
+                <h1 class="titulo">Faça sua inscrição!
+                </h1>
             </div>
-            <div>
-                <input type="text" name="nome" value="" placeholder="Seu Nome " />
-                <input type="text" name="nome" value="" placeholder="Sobre-nome " />
-            </div>
-            <div>
-                <input type="text" cpf="cpf" value="" placeholder="Digite CPF">
-                <input type="text" email="email" value="" placeholder="Seu Email" />
-            </div>
-            <div>
-                <input type="date" nasc="nasc" value="" placeholder="Data de Nascimento" />
-            </div>
-
-
+            <div class="container">
+                <div class="infos">
+                    <div>
+                        <input type="text" name="nome" value="" placeholder="Seu Nome " pattern="[A-Za-z]{0,120}" title="Somente letras são disponíveis" />
+                        <input type="text" name="nome" value="" placeholder="SobreNome " pattern="[A-Za-z]{0,120}" title="Somente letras são disponíveis" />
+                    </div>
+                    <div>
+                        <input type="text" cpf="cpf" value="" placeholder="Digite CPF" pattern="[0-9]{0,12}" title="Somente numeros são disponíveis / Tamanho maximo de 12 numeros!" >
+                        <input type="text" email="email" value="" placeholder="Seu Email" />
+                    </div>
+                </div>
+                    <div>
+                    <input type="date" nasc="nasc" value="" placeholder="Data de Nascimento"pattern="[0-9]" title="Somente numeros são disponíveis" />
+                </div>
+                
+                
                 <label>Gênero</label>
                 <div>
                 </div>
@@ -38,14 +43,16 @@
                     <option value="">Prefiro não dizer</option>
                 </select>
             </div>
-            </div>
-            <div>
-                <label>Qual sua motivação para a viagem?</label>
-            </div>
+        </div>
+        <div>
+            <label>Qual sua motivação para a viagem?</label>
+        </div>
             <div>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Digite em poucas palavras.."></textarea>
+              <a href="./index.html"><input id="btnSend" type="submit" ></a>
             </div>
+        </div>
         </form>
-
-</body>
-</html>
+        
+    </body>
+    </html>
